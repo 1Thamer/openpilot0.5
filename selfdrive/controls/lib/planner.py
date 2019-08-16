@@ -239,6 +239,8 @@ class Planner(object):
     plan_send.plan.vStart = float(self.v_acc_start)
     plan_send.plan.aStart = float(self.a_acc_start)
     plan_send.plan.vTarget = float(self.v_acc)
+    print "from planner"
+    print float(self.a_acc)
     plan_send.plan.aTarget = float(self.a_acc)
     plan_send.plan.vTargetFuture = float(self.v_acc_future)
     plan_send.plan.hasLead = self.mpc1.prev_lead_status
